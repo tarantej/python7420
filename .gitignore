@@ -170,3 +170,31 @@ $RECYCLE.BIN/
 # End of https://www.gitignore.io/api/node,sublimetext,windows,macos,sass
 
 dist/
+
+.idea/dataSources.local.xml
+.idea/dataSources.xml
+.idea/dataSources/
+Evelyn.pdf
+OATHPrivate.txt
+OAUTHPublic.txt
+OldLandingPage/CHANGELOG.md
+OldLandingPage/Evelyn.pdf
+OldLandingPage/LICENSE
+OldLandingPage/README.md
+OldLandingPage/cgi-bin/
+OldLandingPage/corp.heliohost.org/
+OldLandingPage/corp.jpeg
+OldLandingPage/flask/
+OldLandingPage/google309a792fac3598e4.html
+OldLandingPage/index.html
+OldLandingPage/index1.html
+OldLandingPage/oauth.html
+OldLandingPage/package-sample.json
+OldLandingPage/privacy-policy.html
+OldLandingPage/src/
+Rubbish/
+Test_shirish.txt
+YouTrackTest.py
+google309a792fac3598e4.html
+quickstart.py
+temp.html
