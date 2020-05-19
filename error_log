@@ -1,0 +1,25 @@
+[13-May-2020 04:01:33 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'razaa02_razaa02'@'johnny.heliohost.org' to database 'razaa02_corpKG' in /home/razaa02/public_html/config.php on line 10
+[13-May-2020 04:05:53 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'razaa02_razaa02'@'65.19.141.67' to database 'razaa02_corpKG' in /home/razaa02/public_html/config.php on line 10
+[13-May-2020 04:06:41 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'razaa02'@'65.19.141.67' to database 'corpKG' in /home/razaa02/public_html/config.php on line 10
+[13-May-2020 04:07:39 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/razaa02/public_html/config.php on line 10
+[13-May-2020 04:09:27 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'razaa02'@'65.19.141.67' to database 'corpKG' in /home/razaa02/public_html/config.php on line 10
+[13-May-2020 04:09:29 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'razaa02'@'65.19.141.67' to database 'corpKG' in /home/razaa02/public_html/config.php on line 10
+[13-May-2020 04:14:28 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'razaa02'@'localhost' to database 'corpKG' in /home/razaa02/public_html/config.php on line 10
+[14-May-2020 07:54:46 UTC] PHP Parse error:  syntax error, unexpected 'session_start' (T_STRING) in /home/razaa02/public_html/login.php on line 3
+[14-May-2020 07:56:20 UTC] PHP Parse error:  syntax error, unexpected 'session_start' (T_STRING) in /home/razaa02/public_html/login.php on line 3
+[14-May-2020 08:02:51 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in /home/razaa02/public_html/login.php on line 10
+[14-May-2020 08:06:53 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in /home/razaa02/public_html/login.php on line 10
+[14-May-2020 08:09:17 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in /home/razaa02/public_html/login.php on line 10
+[14-May-2020 08:09:58 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in /home/razaa02/public_html/login.php on line 10
+[14-May-2020 08:12:37 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in /home/razaa02/public_html/login.php on line 10
+[14-May-2020 08:56:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function session_register() in /home/razaa02/public_html/login.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/razaa02/public_html/login.php on line 24
+[14-May-2020 08:57:52 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/razaa02/public_html/login.php on line 33
+[14-May-2020 08:58:06 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/razaa02/public_html/login.php on line 33
+[14-May-2020 09:17:00 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/razaa02/public_html/login.php on line 35
+[14-May-2020 09:18:25 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/razaa02/public_html/login.php on line 37
+[14-May-2020 09:20:34 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/razaa02/public_html/login.php on line 37
+[14-May-2020 09:27:48 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/razaa02/public_html/welcome.php on line 4
+[14-May-2020 09:34:07 UTC] PHP Parse error:  syntax error, unexpected '', Welcome to the profile'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/razaa02/public_html/welcome.php on line 7
