@@ -1,3 +1,21 @@
+function parent(userID, password, email) {
+  this.userID = userID;
+  this.password = password;
+  this.email = email; 	  
+
+}
+
+function child(name, parentUserID) {
+  this.name = name;
+  this.parentUserID = parentUserID;
+}
+
+function calendarEvent(eventID, childName){
+  this.eventID = eventID;
+  this.childName = childName;
+}
+
+
 (function () {
   const doc = document.documentElement
 
