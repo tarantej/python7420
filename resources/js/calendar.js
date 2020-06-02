@@ -269,15 +269,7 @@ function hexToRGBA(hex) {
     calendar.borderColor = '#ff5583';
     addCalendar(calendar);
 
-    // calendar = new CalendarInfo();
-    // id += 1;
-    // calendar.id = String(id);
-    // calendar.name = 'Friend';
-    // calendar.color = '#ffffff';
-    // calendar.bgColor = '#03bd9e';
-    // calendar.dragBgColor = '#03bd9e';
-    // calendar.borderColor = '#03bd9e';
-    // addCalendar(calendar);
+ 
 
     // calendar = new CalendarInfo();
     // id += 1;
