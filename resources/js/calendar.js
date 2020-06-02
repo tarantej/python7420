@@ -242,7 +242,7 @@ function hexToRGBA(hex) {
     calendar = new CalendarInfo();
     id += 1;
     calendar.id = String(id);
-    calendar.name = 'Important';
+    calendar.name = 'Child 1';
     calendar.color = '#ffffff';
     calendar.bgColor = '#9e5fff';
     calendar.dragBgColor = '#9e5fff';
@@ -252,7 +252,7 @@ function hexToRGBA(hex) {
     calendar = new CalendarInfo();
     id += 1;
     calendar.id = String(id);
-    calendar.name = 'Optional';
+    calendar.name = 'Child 2';
     calendar.color = '#ffffff';
     calendar.bgColor = '#00a9ff';
     calendar.dragBgColor = '#00a9ff';
@@ -262,7 +262,7 @@ function hexToRGBA(hex) {
     calendar = new CalendarInfo();
     id += 1;
     calendar.id = String(id);
-    calendar.name = 'Compulsory';
+    calendar.name = 'Child 3';
     calendar.color = '#ffffff';
     calendar.bgColor = '#ff5583';
     calendar.dragBgColor = '#ff5583';
