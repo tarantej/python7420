@@ -600,7 +600,19 @@ function hexToRGBA(hex) {
             schedule.bgColor = calendar.bgColor;
             schedule.borderColor = calendar.borderColor;
         }
+      //JSON update
+        const newScheduleObject = {
+            title: scheduleData.title,
+            location: scheduleData.location,
+            isAllDay: scheduleData.isAllDay,
+            start: scheduleData.start,
+            end: scheduleData.end,
+            calendar: scheduleData.calendar
+        }
+        
 
+        console.log('JSON Format Payload \n', JSON.stringify(newScheduleObject));
+      
         cal.createSchedules([schedule]);
 
         refreshScheduleVisibility();
