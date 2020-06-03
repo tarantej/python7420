@@ -1,0 +1,32 @@
+[
+  {
+    "userid": 1,
+    "id": 1,
+    "calendarId": 1,
+    "title": "Timmy",
+    "category": "Kids",
+    "dueDateClass": " ",
+    "start": "2020-06-21T07:30:00.000Z",
+    "end": "2020-06-22T08:30:00.000Z"
+  },
+  {
+    "userid": 2,
+    "id": 2,
+    "calendarId": 1,
+    "title": "Dave",
+    "category": "Kids",
+    "dueDateClass": " ",
+    "start": "2020-06-21T07:30:00.000Z",
+    "end": "2020-06-04T08:30:00.000Z"
+  },
+  {
+    "userid": 2,
+    "id": 3,
+    "calendarId": 1,
+    "title": "Tessa",
+    "category": "Kids",
+    "dueDateClass": " ",
+    "start": "2020-06-13T07:30:00.000Z",
+    "end": "2020-06-13T08:30:00.000Z"
+  }
+]

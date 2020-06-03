@@ -1,0 +1,23 @@
+{
+  "name": "teamcorp_kg",
+  "version": "1.0.0",
+  "description": "The backbone of a solid education is teaching children how to think. Providing students with an education that achieves this goal is done by diversifying how they are taught. This means attending various events, different types of classes, physical and vocational training and all sorts of collaborative efforts. This means having several different agendas with inputs from a vast selection of people. In this day and age, doing all of this is necessary and takes up a big chunk of time and requires that parents, teachers and guardians need to plan when they will plan for those they are responsible for.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarantej/teamcorp_KG.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tarantej/teamcorp_KG/issues"
+  },
+  "homepage": "https://github.com/tarantej/teamcorp_KG#readme",
+  "dependencies": {
+    "browserify-fs": "^1.0.0",
+    "googleapis": "^52.0.0"
+  }
+}

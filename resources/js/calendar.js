@@ -1,3 +1,41 @@
+//Now all we need to do is:
+//Save data to the excel file when a user saves items
+//Load from the excel file when the user loads the calendar
+// I want to use the user ID to separate different users' calendars but if we can we'll just have ONE calendar that everyone can save to lol
+
+// DOCUMENTATION _>>>>>>>>>>>>>>>>>>>>>>>>> https://docs.sheetdb.io/?html--javascript#post-create-row
+
+//https://docs.google.com/spreadsheets/d/1K7_xu13Ri1MHUT5pFEn4Ga6E3wy-njH2NxIlp3UfLW4/edit#gid=0
+
+
+// Getting data using Axios and storing it in an array
+// axios.get('https://sheetdb.io/api/v1/6yf17pjwir3vq')
+//     .then( response => {
+//         eventsArray = response.data
+//         console.log(eventsArray);
+        
+//     });
+
+//Saving data to the google sheet
+// axios.post('https://sheetdb.io/api/v1/6yf17pjwir3vq',{
+//     "data": {
+//         "userid": "2",
+//         "id": "3",
+//         "calendarId": "1",
+//         "title": "Taran",
+//         "category": "Adult",
+//         "dueDateClass": " ",
+//         "start": "2020-06-04T12:30:00+09:02",
+//         "end": "2020-06-05T02:30:00+09:02"}
+// }).then( response => {
+//     console.log(response.data);
+// });
+
+
+// console.log('Events from file:',events);
+
+
+
 // var cal, resizeThrottled;
 // var useCreationPopup = true;
 // var useDetailPopup = true;
@@ -269,47 +307,6 @@ function hexToRGBA(hex) {
     calendar.borderColor = '#ff5583';
     addCalendar(calendar);
 
- 
-
-    // calendar = new CalendarInfo();
-    // id += 1;
-    // calendar.id = String(id);
-    // calendar.name = 'Travel';
-    // calendar.color = '#ffffff';
-    // calendar.bgColor = '#bbdc00';
-    // calendar.dragBgColor = '#bbdc00';
-    // calendar.borderColor = '#bbdc00';
-    // addCalendar(calendar);
-
-    // calendar = new CalendarInfo();
-    // id += 1;
-    // calendar.id = String(id);
-    // calendar.name = 'etc';
-    // calendar.color = '#ffffff';
-    // calendar.bgColor = '#9d9d9d';
-    // calendar.dragBgColor = '#9d9d9d';
-    // calendar.borderColor = '#9d9d9d';
-    // addCalendar(calendar);
-
-    // calendar = new CalendarInfo();
-    // id += 1;
-    // calendar.id = String(id);
-    // calendar.name = 'Birthdays';
-    // calendar.color = '#ffffff';
-    // calendar.bgColor = '#ffbb3b';
-    // calendar.dragBgColor = '#ffbb3b';
-    // calendar.borderColor = '#ffbb3b';
-    // addCalendar(calendar);
-
-    // calendar = new CalendarInfo();
-    // id += 1;
-    // calendar.id = String(id);
-    // calendar.name = 'National Holidays';
-    // calendar.color = '#ffffff';
-    // calendar.bgColor = '#ff4040';
-    // calendar.dragBgColor = '#ff4040';
-    // calendar.borderColor = '#ff4040';
-    // addCalendar(calendar);
 })();
 
 
@@ -609,12 +606,23 @@ function hexToRGBA(hex) {
             end: scheduleData.end,
             calendar: scheduleData.calendar
         }
-        
-
         console.log('JSON Format Payload \n', JSON.stringify(newScheduleObject));
-      
-        cal.createSchedules([schedule]);
 
+        let writeData =  JSON.stringify(newScheduleObject, null, 2);
+        console.log('Dates:',newScheduleObject.start);
+
+        // axios.post('https://sheetdb.io/api/v1/6yf17pjwir3vq',{
+        //     "data": {
+        //         "title": newScheduleObject.title,
+        //         "isAllDay": newScheduleObject.isAllDay,
+        //         "start": newScheduleObject.start,
+        //         "end": newScheduleObject.end}
+        //     
+        // }).then( response => {
+        //     console.log(response.data);
+        // });      
+
+        cal.createSchedules([schedule]);
         refreshScheduleVisibility();
     }
 
@@ -757,7 +765,9 @@ function hexToRGBA(hex) {
     setRenderRangeText();
     setSchedules();
     setEventListener();
+    
 })(window, tui.Calendar);
+
 
 // set calendars
 (function() {
