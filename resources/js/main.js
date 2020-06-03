@@ -1,54 +1,64 @@
-function parent(userID, password, email) {
-  this.userID = userID;
-  this.password = password;
-  this.email = email; 	  
+// function parent(userID, password, email) {
+//   this.userID = userID;
+//   this.password = password;
+//   this.email = email; 	  
 
-}
+// }
 
-function child(name, parentUserID) {
-  this.name = name;
-  this.parentUserID = parentUserID;
-}
+// function child(name, parentUserID) {
+//   this.name = name;
+//   this.parentUserID = parentUserID;
+// }
+// this 
+// https://requirejs.org/docs/errors.html#notloaded
+// https://requirejs.org/docs/errors.html#scripterror
+// require.config({
+//   paths: {
+//       'dependency': 'http://some.domain.dom/path/to/dependency'
+//   }
+// });
 
-function calendarEvent(eventID, childName){
-  this.eventID = eventID;
-  this.childName = childName;
-}
+// //DO NOT DO THIS
+// require(['http://some.domain.dom/path/to/dependency.js'],
+// function (dependency) {});
+
+// //Rather, do this:
+// require.config({
+//     paths: {
+//         'dependency': 'http://some.domain.dom/path/to/dependency'
+//     }
+// });
+
+// require(['dependency'], function (dependency) {});
+//"tui-calendar": "^1.12.13"
+// require.config({
+//       paths: {
+//         "tui-calendar": "^1.12.13"
+//       }
+//   });
+  
+// require(['tui-calendar'], function (dependency) {});
+  
 
 
-(function () {
-  const doc = document.documentElement
+// /* CommonJS */
+// var Calendar =  require(['tui-calendar'], function () {
+  
+//   require(["tui-calendar/dist/tui-calendar.css"], function () {
+//     var calendar = new Calendar('#calendar', {
+//       defaultView: 'month',
+//       taskView: true,
+//       template: {
+//         monthDayname: function(dayname) {
+//           return '<span class="calendar-week-dayname-name">' + dayname.label + '</span>';
+//         }
+//       }
+//     })
+//   });
+// });
 
-  doc.classList.remove('no-js')
-  doc.classList.add('js')
 
-  // Reveal animations
-  if (document.body.classList.contains('has-animations')) {
-    /* global ScrollReveal */
-    const sr = window.sr = ScrollReveal()
+// If you use the default popups, use this.
+// require("tui-date-picker/dist/tui-date-picker.css");
+// require("tui-time-picker/dist/tui-time-picker.css");
 
-    sr.reveal('.hero-title, .hero-paragraph, .hero-cta', {
-      duration: 1000,
-      distance: '40px',
-      easing: 'cubic-bezier(0.5, -0.01, 0, 1.005)',
-      origin: 'bottom',
-      interval: 150
-    })
-
-    sr.reveal('.feature, .pricing-table', {
-      duration: 600,
-      distance: '40px',
-      easing: 'cubic-bezier(0.5, -0.01, 0, 1.005)',
-      interval: 100,
-      origin: 'bottom',
-      viewFactor: 0.5
-    })
-
-    sr.reveal('.feature-extended-image', {
-      duration: 600,
-      scale: 0.9,
-      easing: 'cubic-bezier(0.5, -0.01, 0, 1.005)',
-      viewFactor: 0.5
-    })
-  }
-}())
