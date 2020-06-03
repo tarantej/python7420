@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Calendar</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://teamcorp.s3-ap-southeast-2.amazonaws.com/resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="https://teamcorp.s3-ap-southeast-2.amazonaws.com/resources/css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Dashboard </div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Settings</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Help</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Donate</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-light btn-sm" id="menu-toggle"><img src="https://teamcorp.s3-ap-southeast-2.amazonaws.com/resources/images/ic-arrow-line-left.png" alt=""></button>
+        <div class="ml-5 align-items-center">
+            <!-- <h1 >Precog</h1> -->
+            <img class="logo" src="https://teamcorp.s3-ap-southeast-2.amazonaws.com/resources/images/Precog-Logo.png" alt="Precog">
+
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item ">
+                <button class="btn btn-danger "> Logout</button>
+              <!-- <a class="nav-link" href="#"> Logout <span class="sr-only">(current)</span></a> -->
+            </li>
+
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+      </nav>
+
+      <iframe src="calendar.html" height=100% width=100% frameborder="0"></iframe>
+      
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://teamcorp.s3-ap-southeast-2.amazonaws.com/resources/vendor/jquery/jquery.min.js"></script>
+  <script src="https://teamcorp.s3-ap-southeast-2.amazonaws.com/resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
